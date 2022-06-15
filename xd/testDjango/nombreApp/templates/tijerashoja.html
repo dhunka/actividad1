@@ -1,0 +1,37 @@
+{% extends "plantilla.html" %}
+{%load static%}
+{% block titulo %}
+  {{'login'}}
+{% endblock %}
+{% block titulo2 %}
+ 
+{% endblock %}
+{%block contenido%}
+
+<section class="py-5">
+  <div class="container ">
+      <div class="row ">
+          <div class="col-md-6 align-self-start">
+              <img class=" img-fluid" src="{%static 'images/tijeras.jpg'%}" alt="">
+          </div>
+          <div class="col-md-6 align-self-start">
+             <h1 class="display-5 fw-bolder" >Kit tijerón para césped</h1> 
+             <p class="lead">
+              Una de las características del Set de 2 Herramientas es que gracias a su diseño está perfectamente desarrollado para que no tengas que utilizar utensilios extras. Tendrás una tijera para que cortar y emparejar tu césped sea una tarea sencilla. Por otro lado, como incluye una tijera de poda, con un diseño ergonómico y simple, te permitirá cortar otras áreas como arbustos o quitar espinas. Al estar fabricados en plástico y metal, no se oxidarán, no se deformarán y serán simples de limpiar luego de utilizarlos para prolongar así su vida útil.
+             </p>
+             <div>
+              <span>$10.990</span>
+              </div>
+             <div class="d-flex">
+                 <input class="form-control text-center me-3" type="num" value="1" style="max-width:3rem">
+                 <button class="btn btn-outline-dark flex-shirnk-0" type="button">
+                     <i class="bi-cart-fill me-1"></i>
+                     añadir al carro
+                 </button>
+             </div>
+          </div>
+         
+      </div>
+  </div>
+</section>
+{% endblock %}

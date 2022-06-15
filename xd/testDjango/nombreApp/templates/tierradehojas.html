@@ -1,0 +1,41 @@
+{% extends "plantilla.html" %}
+{%load static%}
+{% block titulo %}
+  {{'login'}}
+{% endblock %}
+{% block titulo2 %}
+ 
+{% endblock %}
+{%block contenido%}
+
+<section class="py-5">
+  <div class="container ">
+      <div class="row ">
+          <div class="col-md-6 align-self-start">
+              <img class=" img-fluid" src="{%static 'images/tierra_hoja.jpg'%}" alt="">
+          </div>
+          <div class="col-md-6 align-self-start">
+             <h1 class="display-5 fw-bolder" >Tierra de hojas</h1> 
+             <p class="lead">
+              La tierra de hojas 80 litros Anasac es perfecta para mantener tus plantas y siembras en buen estado.
+
+              Características de la tierra de hojas 80 litros Anasac: Esta tierra es desinfectada, posee un gran contenido de materia orgánica y una alta densidad. Es indicada para su uso en prados, siembras, resiembras, plantas de interior y exterior.
+              
+              La tierra de hojas 80 litros Anasac mejorará las condiciones de los suelos y favorece la germinación y el crecimiento del césped.
+             </p>
+             <div>
+              <span>$8.790</span>
+              </div>
+             <div class="d-flex">
+                 <input class="form-control text-center me-3" type="num" value="1" style="max-width:3rem">
+                 <button class="btn btn-outline-dark flex-shirnk-0" type="button">
+                     <i class="bi-cart-fill me-1"></i>
+                     añadir al carro
+                 </button>
+             </div>
+          </div>
+         
+      </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "plantilla.html" %}
+{%load static%}
+{% block titulo %}
+  {{'login'}}
+{% endblock %}
+{% block titulo2 %}
+ 
+{% endblock %}
+{%block contenido%}
+
+<section class="py-5">
+  <div class="container ">
+      <div class="row ">
+          <div class="col-md-6 align-self-start">
+              <img class=" img-fluid" src="{%static 'images/macetero-negro.jpg'%}" alt="">
+          </div>
+          <div class="col-md-6 align-self-start">
+             <h1 class="display-5 fw-bolder" >Macetero</h1> 
+             <div>
+                 <span>$4000</span>
+             </div>
+             <p class="lead">
+                El Macetero grafiato cónico de plástico de Just Home Collection es un elemento óptimo para generar una decoración de interiores clásica y destacada. Este producto te permitirá acomodar tus plantas ornamentales en las diferentes habitaciones de tu hogar. Allí lograrás crear ambientes llenos de naturaleza y vitalidad, espacios dotados de colorido y frescura, propios de un verdadero jardín. Su diseño delicado está construido en su totalidad en plástico de alta calidad.
+
+Entre las características del Macetero de Just Home Collection se puede mencionar que su profundidad favorece el correcto desarrollo de las raíces, factor importante para el crecimiento de todo vegetal. Sus dimensiones son 34 cm x 48 cm x 34 cm
+             </p>
+             <div class="d-flex">
+                 <input class="form-control text-center me-3" type="num" value="1" style="max-width:3rem">
+                 <button class="btn btn-outline-dark flex-shirnk-0" type="button">
+                     <i class="bi-cart-fill me-1"></i>
+                     añadir al carro
+                 </button>
+             </div>
+          </div>
+         
+      </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "plantilla.html" %}
+{%load static%}
+{% block titulo %}
+  {{'login'}}
+{% endblock %}
+{% block titulo2 %}
+ 
+{% endblock %}
+{%block contenido%}
+
+<section class="py-5">
+  <div class="container ">
+      <div class="row ">
+          <div class="col-md-6 align-self-start">
+              <img class=" img-fluid" src="{%static 'images/azalea.jpg'%}" alt="">
+          </div>
+          <div class="col-md-6 align-self-start">
+             <h1 class="display-5 fw-bolder" >Azalea</h1> 
+             <p class="lead">
+              Las azaleas son los arbustos de flores del género Rhododendron, especialmente las antiguas variedades Tsutsuji (siempreverde) y Pentanthera (caduca). Las azaleas florecen en primavera, y a menudo sus flores duran varias semanas. Toleran la sombra, y prefieren vivir cerca o debajo de los árboles
+             </p>
+             <div>
+              <span>$7.450</span>
+              </div>
+             <div class="d-flex">
+                 <input class="form-control text-center me-3" type="num" value="1" style="max-width:3rem">
+                 <button class="btn btn-outline-dark flex-shirnk-0" type="button">
+                     <i class="bi-cart-fill me-1"></i>
+                     añadir al carro
+                 </button>
+             </div>
+          </div>
+         
+      </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{#comentario#}
+{#la primera linea no comentario debe ser la herecia#}
+{% extends "plantilla.html" %}
+
+{#definir los bloques y su  contenido#}
+
+{% block titulo %}
+<div class="text-center mt-5">
+    <h1>Registro de marcas</h1>
+</div>
+{% endblock %}
+
+{% block contenido %}
+{# muestra los valores #}
+{{ mensaje }}
+<form action="{% url 'marca' %}" method="post">
+  {% csrf_token %}
+  <div class="row content-center">
+        <div class="col-md-2 offset-md-2">
+           id
+        </div>
+       <div class="col-md-2 offset-md-2">
+           <input type="text" name="txtId" class="form-control">
+       </div>
+       <div class="col-4 col-sm-2">
+           <input type="submit" name="btnBuscar" class="btn btn-success btn-block" value="Buscar">
+       </div>
+ </div>
+ <div class="row justify-content-center">
+    <div class="col-12 col-sm-2">
+        Nombre
+    </div>
+    <div class="col- col-sm-2">
+        <input type="text" name="txtNombre" class="form-control">
+    </div>
+ </div>
+ <div class="row justify-content-center">
+    <div class="col-12 col-sm-2">
+        Activo
+    </div>
+    <div class="col-12 col-sm-2">
+        <input type="checkbox" name="chkActivo" value= 1>
+    </div>
+ </div>
+ <div class="row justify-content-center">
+    <div class="col-12 col-sm-2">
+        Opciones
+    </div>
+    <div class="col-12 col-sm-2">
+        <input type="submit" name="btnGrabar" class="btn btn-success" value="Grabar">
+        <input type="submit" name="btnListar" class="btn btn-success" value="Listar">
+    </div>
+ </div>
+</form>
+ 
+{% endblock %}
+
+{% block listado %}
+    <div class="row justify-content-center">
+        <div>
+           <div class="table-responsive">
+            <table class="table">
+                <thead class="table-active">
+                    <th>#</th>
+                    <th>nombre</th>
+                    <th>activo</th>
+                </thead>
+                <tbody>
+     {% for fila in lista %}
+                      <tr>
+                        <td>{{ fila.id }}</td>
+                        <td>{{ fila.nombre }}</td>
+                        <td>{{ fila.activo }}</td>
+                      </tr>
+      {% endfor %}           
+                </tbody>
+            </table>
+           </div>
+        </div>
+    </div>
+{% endblock %}

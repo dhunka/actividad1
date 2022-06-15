@@ -1,0 +1,10 @@
+{%extend "plantilla2.html%}
+{% block titulo %}
+  {{'login'}}
+{% endblock %}
+{% block titulo2 %}
+  {{'autenticado de usuarios'}}
+{% endblock %}
+{%block contenido%}
+   <p>sesion cerrada</p>
+   <a href="{% url 'login' %}">presione aqui para iniciar sesion</a>
